@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h3>
+    @ViewData["message"]
+</h3>
+<p>
+    @ViewData["Experience"] <small> @ViewData["year"]</small>
+</p>
+<!-- We are able to write C# code in the cshtml page in the MVC using sign-->
+<ol>
+    @foreach(string color in(IEnumerable<string>)ViewData["list"])
+            {
+                <li>
+                    @color
+                </li>
+            }
+</ol>
+<ul>
+    @foreach (var item in ViewBag.ColorList)
+    {
+        <li>
+            @item
+        </li>
+    }
+</ul>
