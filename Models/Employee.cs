@@ -11,4 +11,5 @@ namespace FirstMVCDemo.Models
         public string Name { get; set; }
         public int Salary { get; set; }
     }
+
 }

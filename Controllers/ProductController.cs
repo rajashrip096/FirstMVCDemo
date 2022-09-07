@@ -29,5 +29,15 @@ namespace FirstMVCDemo.Controllers
             ViewBag.Products = products;
             return View();
         }
+        [HttpGet]
+        public IActionResult AddProduct()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddProduct(Product product)
+        {
+            return View();
+        }
     }
 }

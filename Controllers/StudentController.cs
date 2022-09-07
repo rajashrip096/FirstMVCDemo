@@ -25,5 +25,15 @@ namespace FirstMVCDemo.Controllers
             ViewBag.empList = stud;
             return View();
         }
+        [HttpGet]
+        public IActionResult AddStudent()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddStudent(Student1 student)
+        {
+            return View();
+        }
     }
 }
